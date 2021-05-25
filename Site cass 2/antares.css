@@ -1,0 +1,103 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    overflow-x:hidden ;
+
+}
+
+.col{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.colMain{
+    flex: 2;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.antares{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.borboleta{
+    float: right;
+    max-width: 55%;
+    max-height: 55%;
+    position: relative;
+    left: 19rem;
+    margin-top: 2rem;
+    animation-name: borboletas;
+    animation-duration: 5s;
+    
+    animation-iteration-count: infinite;
+}
+
+.borboleta2{
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    left: 19rem;
+    animation-name: borboletas;
+    animation-duration: 4s;
+    
+    animation-iteration-count: infinite;
+}
+
+.borboleta3{
+    float: left;
+    max-width: 55%;
+    max-height: 55%;
+    position: relative;
+    right: 19rem;
+    margin-top: 2rem;
+    animation-name: borboletas;
+    animation-duration: 6s;
+    
+    animation-iteration-count: infinite;
+}
+
+.borboleta4{
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    right: 19rem;
+    animation-name: borboletas;
+    animation-duration: 3s;
+    
+    animation-iteration-count: infinite;
+}
+
+@keyframes borboletas {
+    0%   {margin-top: 20px;}
+    
+    40%  {margin-top: 50px;}
+    
+    100% {margin-top: 20px;}
+  }
+
+
+.row h1{
+    font-family: 'Finger Paint', cursive;
+    font-size: 9rem;    
+    text-align: center;
+}
